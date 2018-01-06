@@ -23,9 +23,9 @@ RUN mkdir /yacoin && \
   ../dist/configure --disable-replication --enable-cxx && \
   make && \
   cd /yacoin/build && \
-  wget http://sourceforge.net/projects/boost/files/boost/1.54.0/boost_1_54_0.tar.gz && \
-  tar xvzf boost_1_54_0.tar.gz && \ 
-  cd  boost_1_54_0 && \
+  wget http://sourceforge.net/projects/boost/files/boost/1.55.0/boost_1_55_0.tar.gz && \
+  tar xvzf boost_1_55_0.tar.gz && \ 
+  cd  boost_1_55_0 && \
   ./bootstrap.sh && \
   ./b2 --with-chrono --with-filesystem --with-program_options --with-thread --with-test stage cxxflags="-std=c++0x" && \
   cd /yacoin/build && \
