@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ( cd /yacoin/build && \
-  git clone https://github.com/ya4-old-c-coder/yacoin.git && \
+  git clone https://github.com/dev34253/yacoin.git && \
   cd /yacoin/build/yacoin/src && \
   ln -s ../../miniupnpc-1.8 miniupnpc && \
   ln -s makefile.ubuntu makefile && \
