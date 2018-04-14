@@ -1,8 +1,8 @@
 # yacoin-docker
-Dockerfiles for Yacoin
+Dockerfiles for Yacoin Build Environment
 
 Build the docker image:
-sudo docker build -t yacoinbuild .
+docker build -t yacoinbuild .
 
-Build yacoind and yacoin-qt for linux from yacoin github master branch:
-sudo docker run -v ABSOLUTE_PATH_FOR_BINARIES:/yacoin/bin yacoinbuild
+If you want to use it to build yacoin inside of it and the source is on the host:
+docker run -v ABSOLUTE_PATH_TO_YACOIN_SOURCE:/src/yacoin -ti yacoinbuild /bin/bash
